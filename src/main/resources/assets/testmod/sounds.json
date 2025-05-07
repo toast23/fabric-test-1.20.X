@@ -1,0 +1,8 @@
+{
+  "cat_used": {
+    "subtitle": "sounds.testmod.cat_used",
+    "sounds": [
+      "testmod:cat_used"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "item.testmod.cat": "Cat",
+  "item.testmod.sapphire": "Sapphire",
+
+  "itemgroup.cat": "Cat Mod Group",
+
+  "sounds.testmod.cat_used": "Cat Meow"
+}

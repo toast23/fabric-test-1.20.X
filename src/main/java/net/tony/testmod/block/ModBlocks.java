@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.FallingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -14,7 +15,7 @@ import net.tony.testmod.TestMod;
 
 public class ModBlocks {
     public static final Block DOG_BLOCK = registerBlock("dog_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.ANVIL)));
+            new FallingBlock(FabricBlockSettings.copyOf(Blocks.ANVIL)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

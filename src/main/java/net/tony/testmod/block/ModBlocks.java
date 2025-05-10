@@ -9,13 +9,14 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.tony.testmod.TestMod;
 
 
 public class ModBlocks {
     public static final Block DOG_BLOCK = registerBlock("dog_block",
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.ANVIL)));
+            new FallingBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.ANVIL).strength(3f)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

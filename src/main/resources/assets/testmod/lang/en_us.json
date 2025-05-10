@@ -2,6 +2,8 @@
   "item.testmod.cat": "Cat",
   "item.testmod.sapphire": "Sapphire",
 
+  "block.testmod.dog_block": "Block of Dog",
+
   "itemgroup.cat": "Cat Mod Group",
 
   "sounds.testmod.cat_used": "Cat Meow"

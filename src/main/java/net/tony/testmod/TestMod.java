@@ -2,6 +2,7 @@ package net.tony.testmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tony.testmod.block.ModBlocks;
 import net.tony.testmod.item.ModItemGroups;
 import net.tony.testmod.item.ModItems;
 import net.tony.testmod.sounds.ModSounds;
@@ -17,5 +18,6 @@ public class TestMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModSounds.registerSounds();
+		ModBlocks.registerModBlocks();
 	}
 }

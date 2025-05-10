@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.tony.testmod.TestMod;
+import net.tony.testmod.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup TEST_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -19,6 +20,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SAPPHIRE);
 
                         entries.add(Items.OCELOT_SPAWN_EGG);
+
+                        entries.add(ModBlocks.DOG_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {

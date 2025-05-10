@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " # ",
+    " # ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "testmod:dog"
+    }
+  },
+  "result": {
+    "item": "testmod:dog_block"
+  }
+}
+
+
+

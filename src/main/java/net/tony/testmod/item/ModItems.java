@@ -14,12 +14,14 @@ import net.tony.testmod.item.custom.CatItem;
 
 public class ModItems {
     public static final Item CAT = registerItem("cat", new CatItem(new FabricItemSettings()
-            .maxDamage(64)));
+            .maxDamage(16)));
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new FabricItemSettings()));
+    public static final Item DOG = registerItem("dog", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CAT);
         entries.add(SAPPHIRE);
+        entries.add(DOG);
     }
 
     private static Item registerItem(String name, Item item) {

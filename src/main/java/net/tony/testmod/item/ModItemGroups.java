@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.CAT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CAT);
                         entries.add(ModItems.SAPPHIRE);
+                        entries.add(ModItems.DOG);
 
                         entries.add(Items.OCELOT_SPAWN_EGG);
 

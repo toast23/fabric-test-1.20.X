@@ -1,6 +1,7 @@
 {
   "item.testmod.cat": "Cat",
   "item.testmod.sapphire": "Sapphire",
+  "item.testmod.dog": "Dog",
 
   "block.testmod.dog_block": "Block of Dog",
 

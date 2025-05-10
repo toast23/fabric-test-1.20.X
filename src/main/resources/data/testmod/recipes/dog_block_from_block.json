@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "testmod:dog_block"
+    }
+  ],
+  "result" : {
+    "item": "testmod:dog",
+    "count": 9
+  }
+}

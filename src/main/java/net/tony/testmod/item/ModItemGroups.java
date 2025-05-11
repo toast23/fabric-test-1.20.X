@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(Items.OCELOT_SPAWN_EGG);
 
                         entries.add(ModBlocks.DOG_BLOCK);
+                        entries.add(ModBlocks.CAT_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {

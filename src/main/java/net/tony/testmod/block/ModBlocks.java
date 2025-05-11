@@ -13,15 +13,17 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.tony.testmod.TestMod;
+import net.tony.testmod.block.custom.DogBlock;
 import net.tony.testmod.block.custom.SoundBlock;
 
 
 public class ModBlocks {
     public static final Block DOG_BLOCK = registerBlock("dog_block",
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.GLOWSTONE)
+            new DogBlock(FabricBlockSettings.copyOf(Blocks.GLOWSTONE)
                     .sounds(BlockSoundGroup.ANVIL).strength(3f)
                     .requiresTool()
-                    .strength(3f)));
+                    .strength(3f)
+                    .luminance(state -> state.get(DogBlock.HIT) ? 15 : 0)));
     public static final Block CAT_BLOCK = registerBlock("cat_block",
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
                     .sounds(BlockSoundGroup.ANVIL).strength(3f)));

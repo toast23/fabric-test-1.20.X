@@ -18,9 +18,13 @@ import net.tony.testmod.block.custom.SoundBlock;
 
 public class ModBlocks {
     public static final Block DOG_BLOCK = registerBlock("dog_block",
-            new FallingBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.ANVIL).strength(3f)));
+            new FallingBlock(FabricBlockSettings.copyOf(Blocks.GLOWSTONE)
+                    .sounds(BlockSoundGroup.ANVIL).strength(3f)
+                    .requiresTool()
+                    .strength(3f)));
     public static final Block CAT_BLOCK = registerBlock("cat_block",
-            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.ANVIL).strength(3f)));
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)
+                    .sounds(BlockSoundGroup.ANVIL).strength(3f)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

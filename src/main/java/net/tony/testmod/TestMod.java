@@ -2,7 +2,10 @@ package net.tony.testmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.tony.testmod.block.ModBlocks;
+import net.tony.testmod.entity.ModEntities;
+import net.tony.testmod.entity.custom.PorcupineEntity;
 import net.tony.testmod.item.ModItemGroups;
 import net.tony.testmod.item.ModItems;
 import net.tony.testmod.sounds.ModSounds;
@@ -19,5 +22,6 @@ public class TestMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModSounds.registerSounds();
 		ModBlocks.registerModBlocks();
+		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorcupineAttributes());
 	}
 }

@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.tony.testmod.block.ModBlocks;
 import net.tony.testmod.entity.ModEntities;
+import net.tony.testmod.entity.custom.CarEntity;
 import net.tony.testmod.entity.custom.PorcupineEntity;
 import net.tony.testmod.item.ModItemGroups;
 import net.tony.testmod.item.ModItems;
@@ -23,5 +24,6 @@ public class TestMod implements ModInitializer {
 		ModSounds.registerSounds();
 		ModBlocks.registerModBlocks();
 		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorcupineAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.CAR, CarEntity.createCarAttributes());
 	}
 }

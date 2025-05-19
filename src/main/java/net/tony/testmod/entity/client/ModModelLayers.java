@@ -7,4 +7,6 @@ import net.tony.testmod.TestMod;
 public class ModModelLayers {
     public static final EntityModelLayer PORCUPINE =
             new EntityModelLayer(new Identifier(TestMod.MOD_ID, "porcupine"), "main");
+    public static final EntityModelLayer CAR =
+            new EntityModelLayer(new Identifier(TestMod.MOD_ID, "car"), "main");
 }
